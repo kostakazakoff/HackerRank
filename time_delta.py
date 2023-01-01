@@ -11,8 +11,9 @@ def time_delta(t1, t2):
 
 
 if __name__ == '__main__':
-
-    with open(os.environ['OUTPUT_PATH'], 'w') as f:
+    
+    # with open(os.environ['OUTPUT_PATH'], 'w') as f:
+    with open('./timedelta.txt', 'w') as f:
 
         t = int(input())
 

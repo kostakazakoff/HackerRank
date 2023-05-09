@@ -25,10 +25,8 @@ def hamming_distance(l1, l2, fragment_length):
     second_fragment = chars_list[l2 - 1:l2 + fragment_length - 1]
 
     r = min(len(first_fragment), len(second_fragment))
-    chr_n = {'a': 1, 'b': 0}
     for i in range(r):
-        h_distance += chr_n[first_fragment[i]]^chr_n[second_fragment[i]]
-        # h_distance += len({first_fragment[i], second_fragment[i]}) - 1
+        h_distance += len({first_fragment[i], second_fragment[i]}) - 1
 
     print(h_distance)
 

@@ -8,7 +8,6 @@ import sys
 def birthday(s, d, m):
     counter = 0
     for i in range(len(s)-m+1):
-        print(s[i:i+2])
         segments_slice = s[i:i+m]
         if sum(segments_slice) == d:
             counter += 1

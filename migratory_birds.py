@@ -14,7 +14,7 @@ def migratoryBirds(arr):
 
     arr = sorted(arr, reverse=True)
     nums = set(arr)
-    birds_dict = {k:arr.count(k) for k in nums}
+    birds_dict = {k: arr.count(k) for k in nums}
     return max(birds_dict, key=birds_dict.get)
 
 

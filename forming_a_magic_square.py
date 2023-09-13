@@ -22,17 +22,14 @@ def formingMagicSquare(s):
 
         for i in range(8):
             cost_1 += abs(matrix_sequence[i] - magic_sequence[i])
-        for i in range(8):
             cost_2 += abs(matrix_sequence[i] - magic_sequence_mirror[i])
 
         cost = min(cost_1, cost_2)
+        cost += abs(s[1][1] - 5)
 
         all_vars.append(cost)
 
     cost = min(all_vars)
-
-    if s[1][1] != 5:
-        cost += 1
 
     return cost
 

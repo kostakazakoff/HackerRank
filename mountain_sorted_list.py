@@ -1,4 +1,5 @@
 def check_mountain_sort(the_list):
+
     if len(the_list) < 3:
         return False
 

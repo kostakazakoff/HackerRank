@@ -21,7 +21,6 @@ def getMoneySpent(keyboards, drives, b):
             if current_sum > max_sum:
                 max_sum = current_sum
             
-    
     return (max_sum)
 
 
